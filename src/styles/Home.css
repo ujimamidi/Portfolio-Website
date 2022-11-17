@@ -1,0 +1,18 @@
+.home-container {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin-left: 60px;  
+}
+
+.intro-section {
+  color: white;
+  font-size: 20px;
+}
+
+#name {
+  color: #c77dff;
+  font-size: 40px;
+}
+
+#tagline {
+  color: #f4a261;
+}
