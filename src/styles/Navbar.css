@@ -1,0 +1,8 @@
+.navbar-container {
+  background-color: #47127b;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
