@@ -4,7 +4,7 @@ import '../styles/Landing.css'
 
 export default function Landing() {
   return (
-    <div className='landing-container'>
+    <div className='landing-container' id='landing'>
       
     </div>
   )

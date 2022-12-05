@@ -5,7 +5,7 @@ import '../styles/Contact.css'
 export class Contact extends Component {
   render() {
     return (
-      <div className='contact-container'>
+      <div className='contact-container' id='contact'>
 
       </div>
     )

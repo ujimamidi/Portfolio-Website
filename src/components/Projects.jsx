@@ -5,7 +5,7 @@ import '../styles/Projects.css'
 export class Projects extends Component {
   render() {
     return (
-      <div className='projects-container'>
+      <div className='projects-container' id='projects'>
 
       </div>
     )
