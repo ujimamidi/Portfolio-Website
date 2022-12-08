@@ -1,4 +1,162 @@
 .landing-container {
   background-color: #450470;
-  /* border: black solid 2px; */
+  display: flex;
+}
+
+.landing-container__left {
+  flex: 0.55;
+  overflow: hidden;
+}
+
+.landing-container__right {
+  flex: 0.45; 
+}
+
+.img-container {
+  width: 700px;
+  height: 100%;
+  float: right;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  width: 700px;
+  align-self: center;
+}
+
+.right-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: consolas;
+  color: #fff1e6;
+  position: relative;
+}
+
+.right-container h2 {
+  font-size: 45px;
+  margin: 7px 0;
+  animation: type 1.5s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.right-container h5 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  animation: slide-up 1s ease;
+}
+
+.right-container h6 {
+  font-size: 16px;
+  /* max-width: 85%; */
+  word-wrap: normal;
+  font-weight: lighter;
+  animation: slide-up 1.5s ease;
+}
+
+#name {
+  color: #dc93f6;
+}
+
+#emphasis {
+  color: #f4a261;
+}
+
+.right-container a {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+.landing-arrow {
+  font-size: 40px;
+  cursor: pointer;
+  animation: arrowBlink 2s infinite;
+}
+
+/* Animations */
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 15ch;
+  }
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .landing-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-container__left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .right-container h2 {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .right-container h5 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .right-container h6 {
+    font-size: 20px; 
+    width: 100%;
+    text-align: center;
+    word-wrap: normal;
+  }
+
+  .right-container a {
+    position: absolute;
+    margin: auto;
+    left: 47%;
+    bottom: 50px;
+  }
 }

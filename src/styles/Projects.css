@@ -1,3 +1,66 @@
 .projects-container {
-  background-color: rgb(119, 246, 161);
+  background-color: #f4a261;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio-item h3 {
+  font-family: 'Hando';
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-item a {
+  color: white;
+}
+
+.portfolio-image__hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.portfolio-item:hover .portfolio-image__hover{
+  opacity: 100;
+  transform: scale(1);
+}
+
+.portfolio-image__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-image__icons .icon {
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
 }
